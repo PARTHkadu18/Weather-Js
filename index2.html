@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Input with Icon</title>
+  <style>
+    .search-container {
+      position: relative;
+      width: 300px;
+    }
+
+    .search-container input {
+      width: 100%;
+      padding: 10px 40px 10px 15px; /* Space for the icon */
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      outline: none;
+    }
+
+    .search-container .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 15px; /* Adjust based on padding */
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #aaa;
+      pointer-events: none; /* Makes the icon unclickable */
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" placeholder="Search...">
+    <span class="search-icon">&#128269;</span> <!-- Unicode for search icon -->
+  </div>
+</body>
+</html>
